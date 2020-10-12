@@ -15,7 +15,6 @@
     <modules>
         <module>sca-provider</module>
         <module>sca-consumer</module>
-        <module>sca-consumer</module>
     </modules>
 
     <dependencies>
