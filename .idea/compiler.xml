@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="sca-provider" />
+        <module name="sca-common" />
+        <module name="sca-consumer" />
+        <module name="sca-gateway" />
+        <module name="sca-api" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="sca-consumer" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="sca-api" options="-parameters" />
+      <module name="sca-common" options="-parameters" />
+      <module name="sca-consumer" options="-parameters" />
+      <module name="sca-gateway" options="-parameters" />
+      <module name="sca-provider" options="-parameters" />
+      <module name="sca-rest" options="-parameters" />
+    </option>
+  </component>
+</project>
