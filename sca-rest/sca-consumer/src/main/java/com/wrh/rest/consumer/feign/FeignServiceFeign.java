@@ -18,6 +18,7 @@ public class FeignServiceFeign implements FallbackFactory<ConsumerFeign> {
             @Override
             public String provider() {
                 return "生产者sca-provider服务被降级停用了";
+
             }
         };
     }
