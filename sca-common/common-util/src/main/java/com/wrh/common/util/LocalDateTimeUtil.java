@@ -10,7 +10,7 @@ import java.util.Date;
  * @author wrh
  * @version 1.0
  * @date 2020/10/13 15:09
- * @describe
+ * @describe LocalDateTimeUtil 工具类
  */
 public final class LocalDateTimeUtil {
 
@@ -99,4 +99,13 @@ public final class LocalDateTimeUtil {
         LocalDateTime localDateTime = stringToLocalDateTime(time, oldFmt);
         return localDateTimeToString(localDateTime, newFmt);
     }
+
+    /**
+     * @description : 判断是否在一个时间段内
+     */
+    public static boolean isInTimeRange(LocalDateTime time, LocalDateTime start, LocalDateTime end) {
+        if (time == null) return false;
+        return ((start.isBefore(time) || start.isEqual(time)) && (end.isAfter(time) || end.isEqual(time)));
+    }
+
 }
