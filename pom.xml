@@ -23,6 +23,7 @@
         <module>sca-gateway</module>
         <module>sca-api</module>
         <module>sca-common</module>
+        <module>sca-spring</module>
     </modules>
 
     <properties>
