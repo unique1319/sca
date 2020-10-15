@@ -13,6 +13,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>spring-thread</module>
+        <module>spring-aop</module>
     </modules>
 
 </project>

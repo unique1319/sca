@@ -39,6 +39,7 @@
         <spring-cloud-alibaba.version>2.2.0.RELEASE</spring-cloud-alibaba.version>
         <spring-cloud.version>Hoxton.RELEASE</spring-cloud.version>
         <spring-cloud-starter-openfeign.version>2.2.0.RELEASE</spring-cloud-starter-openfeign.version>
+        <cn.hutool.version>5.4.4</cn.hutool.version>
     </properties>
 
     <dependencyManagement>
@@ -64,6 +65,12 @@
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-starter-openfeign</artifactId>
                 <version>${spring-cloud-starter-openfeign.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>cn.hutool</groupId>
+                <artifactId>hutool-all</artifactId>
+                <version>${cn.hutool.version}</version>
             </dependency>
 
         </dependencies>

@@ -12,6 +12,7 @@
         <module name="spring-thread" />
         <module name="sca-gateway" />
         <module name="sca-api" />
+        <module name="spring-aop" />
       </profile>
     </annotationProcessing>
   </component>
@@ -25,6 +26,7 @@
       <module name="sca-provider" options="-parameters" />
       <module name="sca-rest" options="-parameters" />
       <module name="sca-spring" options="-parameters" />
+      <module name="spring-aop" options="-parameters" />
       <module name="spring-thread" options="-parameters" />
     </option>
   </component>
